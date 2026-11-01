@@ -373,6 +373,57 @@
       ]
     },
     {
+      "atomType": "ExtractTag",
+      "x": 0.7,
+      "y": 0.3,
+      "uniqueID": "id-346",
+      "name": "Extract Untagged",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tagIndex": 0,
+      "selectedTags": [],
+      "includeUntagged": true,
+      "notKeepOut": false
+    },
+    {
+      "atomType": "Export",
+      "x": 0.8,
+      "y": 0.3,
+      "uniqueID": "id-349",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "STL Tolerance",
+          "ioValue": 0.002
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "nc_mold_workshop",
+          "currentEquation": "nc_mold_workshop"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "nc_mold_workshop"
+    },
+    {
       "atomType": "Molecule",
       "x": 0.2,
       "y": 0.5,
@@ -1306,6 +1357,11 @@
     },
     {
       "ap2Name": "geometry",
+      "ap1ID": "id-328",
+      "ap2ID": "id-346"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": "id-333",
       "ap2ID": "id-339"
     },
@@ -1313,6 +1369,11 @@
       "ap2Name": "Shape2",
       "ap1ID": "id-339",
       "ap2ID": "id-328"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-346",
+      "ap2ID": "id-349"
     },
     {
       "ap2Name": "retain",
