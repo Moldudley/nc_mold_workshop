@@ -314,6 +314,10 @@
         {
           "name": "Shape2",
           "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape3",
+          "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
     },
@@ -340,6 +344,31 @@
           "name": "z-axis degrees",
           "ioValue": 180,
           "currentEquation": "180"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.7,
+      "y": 0.7,
+      "uniqueID": "id-339",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": -1,
+          "currentEquation": "-1"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
         }
       ]
     },
@@ -1274,6 +1303,16 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-328",
       "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-333",
+      "ap2ID": "id-339"
+    },
+    {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-339",
+      "ap2ID": "id-328"
     },
     {
       "ap2Name": "retain",
